@@ -37,7 +37,7 @@ function createTitle(item){
 
 // change title btn size
 function changeSize(title){
-    const width = title.offsetWidth
+    const width = title.offsetWidth;
     console.log(width);
 }
 
@@ -85,13 +85,3 @@ function handleResponse(){
         titleBox.append(createTitle(item));
     }    
 }
-
-
-
-
-
-
-
-
-
-
