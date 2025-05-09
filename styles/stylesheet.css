@@ -1,0 +1,58 @@
+/* فقط چون گفته بودید که از ستون بندی بوت استرپ استفاده کنیم، برای ریسپانسیو بجای عرض 1000 از عرض 992 استفاده کرده ام. */
+
+
+.section{
+    margin: 100px 50px;
+}
+.box-wrapper{
+    display: flex;
+}
+.titels{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title{
+    background-color: #fff;
+    border: none;
+    /* width: 130px; */
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 0 0 4px 0 #00000040;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.title.active{
+    background: #34A4E3;
+}
+.datas{
+    box-shadow: -2px 0px 4px 0px #00000040 ;
+    padding: 15px 20px;
+}
+.data-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+@media (min-width : 992px){
+    .section{
+
+    }
+    .box-wrapper{
+        flex-direction: column;
+    }
+    .titels{
+        flex-direction: row-reverse;
+    }
+    .title{
+
+    }
+    .datas{
+        order: 1;
+    }
+    .data-text{
+
+    }
+}
